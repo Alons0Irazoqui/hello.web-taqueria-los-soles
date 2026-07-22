@@ -90,12 +90,19 @@ Puedes iterar sobre el proyecto con Claude Code dándole instrucciones las veces
 
 ## 8. Checklist
 
-- [ ] Adaptar la plantilla base con la información del negocio (nombre, teléfono, menú y precios).
-- [ ] Remover el fondo del logo y exportarlo en formato transparente.
-- [ ] Aplicar la paleta de colores de marca (`#F7EBDD`, `#901711`, `#DB8C13`, `#0D0D0C`).
-- [ ] Implementar la tipografía sugerida (encabezados y cuerpo de texto).
-- [ ] Lograr un acabado visual premium, enterprise y minimalista.
-- [ ] Implementar animaciones de scroll.
-- [ ] Implementar preloader con spinner + logo.
-- [ ] Implementar animación del título del hero (máquina de escribir / cambio de color u otro efecto tipográfico).
-- [ ] Iterar con Claude Code hasta alcanzar el resultado final deseado.
+- [x] Adaptar la plantilla base con la información del negocio (nombre, teléfono, menú y precios).
+- [x] Remover el fondo del logo y exportarlo en formato transparente.
+- [x] Aplicar la paleta de colores de marca (`#F7EBDD`, `#901711`, `#DB8C13`, `#0D0D0C`).
+- [x] Implementar la tipografía sugerida (encabezados y cuerpo de texto).
+- [x] Lograr un acabado visual premium, enterprise y minimalista.
+- [x] Implementar animaciones de scroll.
+- [x] Implementar preloader con spinner + logo.
+- [x] Implementar animación del título del hero (máquina de escribir / cambio de color u otro efecto tipográfico).
+- [x] Iterar con Claude Code hasta alcanzar el resultado final deseado.
+
+## 9. Entregables finales
+
+- `index.html`, `style.css`, `main.js` — sitio final, listo para desplegar (abrir `index.html` directamente o servirlo con cualquier hosting estático).
+- `logo.png` — copia del logo sin fondo (`logo-removebg-preview (1).png`) con nombre limpio, usado en todo el sitio.
+- Secciones incluidas: preloader, navbar con CTA de WhatsApp, hero, barra de estadísticas, menú con filtros, paquetes para parrillada, por qué elegirnos, cómo pedir, galería, contacto (formulario → WhatsApp) y footer.
+- No se incluyeron dirección, horarios, mapa ni reseñas de clientes por no estar disponibles en el material proporcionado (ver nota en la sección 2).

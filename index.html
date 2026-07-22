@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Técnico -->
+  <title>Taquería Los Soles — Steak & Grill | El Taco de Tu Día</title>
+  <meta name="description" content="Tacos de cortes al carbón (arrachera, ribeye, costilla y más), kekas, quesos fundidos y paquetes para tu parrillada desde $350. Tortillas hechas a mano. Pide por WhatsApp al 55 1915 8509." />
+  <meta name="keywords" content="taqueria los soles, steak and grill, tacos de arrachera, tacos de ribeye, tacos de cortes, carne asada, paquetes para parrillada, kekas, quesos fundidos, el taco de tu dia" />
+  <meta name="author" content="Taquería Los Soles" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="restaurant" />
+  <meta property="og:title"       content="Taquería Los Soles — Steak & Grill | El Taco de Tu Día" />
+  <meta property="og:description" content="Cortes al carbón, tortillas hechas a mano y paquetes para tu parrillada. Arma tu taco a tu gusto y pide por WhatsApp." />
+  <meta property="og:locale"      content="es_MX" />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon: sol estilizado en los colores de marca -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='96' fill='%230D0D0C'/%3E%3Cg fill='%23DB8C13'%3E%3Cpolygon points='100,10 110,45 90,45'/%3E%3Cpolygon points='100,190 110,155 90,155'/%3E%3Cpolygon points='10,100 45,90 45,110'/%3E%3Cpolygon points='190,100 155,90 155,110'/%3E%3Cpolygon points='35,35 60,55 45,65'/%3E%3Cpolygon points='165,165 140,145 155,135'/%3E%3Cpolygon points='165,35 145,60 135,45'/%3E%3Cpolygon points='35,165 55,140 65,155'/%3E%3C/g%3E%3Ccircle cx='100' cy='100' r='42' fill='%23901711'/%3E%3Cpath d='M78 100c0-14 10-26 22-26s22 12 22 26-10 30-22 30-22-16-22-30z' fill='%23F7EBDD'/%3E%3C/svg%3E" />
+</head>
+
+<body class="is-loading">
+
+<!-- ================================
+     PRELOADER — Cargando con logo + transición "sol" de salida
+================================ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <div class="loader-sun" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <img src="logo.png" alt="Taquería Los Soles" class="loader-logo" />
+    <div class="loader-bar-wrap">
+      <div class="loader-bar" id="loader-bar"></div>
+    </div>
+    <p class="loader-text">Encendiendo el asador…</p>
+  </div>
+</div>
+
+<!-- ================================
+     MENÚ MÓVIL
+================================ -->
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <button id="menu-close" class="mobile-menu-close" aria-label="Cerrar menú">✕</button>
+  <a href="#menu">🌮 Menú</a>
+  <a href="#paquetes">🔥 Paquetes</a>
+  <a href="#nosotros">⭐ Por Qué Nosotros</a>
+  <a href="#como-funciona">📋 Cómo Pedir</a>
+  <a href="#galeria">📸 Galería</a>
+  <a href="#contacto">📍 Contacto</a>
+  <a href="https://wa.me/525519158509?text=%C2%A1Hola!%20Quiero%20hacer%20mi%20pedido%20en%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%8C%AE" target="_blank" rel="noopener" class="mobile-menu-cta">Pedir por WhatsApp</a>
+</div>
+
+<!-- ================================
+     NAVBAR
+================================ -->
+<nav class="navbar" id="navbar" role="navigation" aria-label="Navegación principal">
+  <a href="#inicio" class="navbar-brand" aria-label="Ir al inicio">
+    <img src="logo.png" alt="Taquería Los Soles — Steak & Grill" class="navbar-logo" />
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#menu">Menú</a></li>
+    <li><a href="#paquetes">Paquetes</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#como-funciona">Cómo Pedir</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+    <li>
+      <a href="https://wa.me/525519158509?text=%C2%A1Hola!%20Quiero%20hacer%20mi%20pedido%20en%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%8C%AE"
+         target="_blank" rel="noopener" class="nav-cta">
+        <svg viewBox="0 0 24 24" width="16" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.523 5.82L.057 23.862l6.197-1.427A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm.001 21.818a9.801 9.801 0 01-4.99-1.366l-.358-.213-3.677.846.873-3.576-.233-.368A9.818 9.818 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.818 4.39 9.818 9.82 0 5.43-4.39 9.818-9.818 9.818z"/></svg>
+        Pedir Ahora
+      </a>
+    </li>
+  </ul>
+
+  <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ================================
+     HERO — Full Screen
+================================ -->
+<header class="hero" id="inicio">
+
+  <!-- Imagen de fondo con efecto parallax -->
+  <div class="hero-bg" id="hero-bg" data-parallax
+       style="background-image:url('https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1920&q=80');"
+       role="img" aria-label="Corte de arrachera jugosa recién rebanada, listo para tacos"></div>
+  <div class="hero-gradient" aria-hidden="true"></div>
+
+  <!-- Partículas JS (brasas) -->
+  <div class="hero-particles" id="hero-particles" aria-hidden="true"></div>
+
+  <!-- Doodles decorativos -->
+  <span class="hero-doodle" style="top:14%; left:6%;"  aria-hidden="true">☀️</span>
+  <span class="hero-doodle" style="top:20%; right:8%;" aria-hidden="true">🌶️</span>
+  <span class="hero-doodle" style="bottom:22%; left:5%;" aria-hidden="true">🌮</span>
+  <span class="hero-doodle" style="bottom:30%; right:6%;" aria-hidden="true">🔥</span>
+
+  <!-- Contenido centrado -->
+  <div class="hero-inner">
+
+    <div class="hero-logo-badge reveal scale-in">
+      <img src="logo.png" alt="Logotipo de Taquería Los Soles, Steak & Grill" class="hero-logo-img" />
+    </div>
+
+    <div class="hero-eyebrow reveal fade-up">
+      <span class="dot"></span>
+      Steak &amp; Grill · Taquería Los Soles
+    </div>
+
+    <h1 class="hero-title">
+      <span class="typewriter" id="typewriter" data-text="El Taco de"></span>
+      <span class="hero-cursor" id="hero-cursor" aria-hidden="true">|</span><br />
+      <span class="word gold-cycle">Tu Día</span>
+    </h1>
+
+    <p class="hero-subtitle reveal fade-up">
+      Cortes selectos a la parrilla, tortillas hechas a mano al momento y toda la sazón
+      que le da nombre a Los Soles. Listos para pedir cuando se te antoje. 🌮🔥
+    </p>
+
+    <div class="hero-badges reveal fade-up">
+      <span class="hero-badge">🫓 Tortillas hechas a mano</span>
+      <span class="hero-badge">🥩 9 cortes a la parrilla</span>
+      <span class="hero-badge">📱 Pide directo por WhatsApp</span>
+    </div>
+
+    <div class="hero-ctas reveal fade-up">
+      <a href="https://wa.me/525519158509?text=%C2%A1Hola!%20Quiero%20hacer%20mi%20pedido%20en%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%8C%AE"
+         target="_blank" rel="noopener" class="btn btn-primary">
+        <svg viewBox="0 0 24 24" width="18" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.523 5.82L.057 23.862l6.197-1.427A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm.001 21.818a9.801 9.801 0 01-4.99-1.366l-.358-.213-3.677.846.873-3.576-.233-.368A9.818 9.818 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.818 4.39 9.818 9.82 0 5.43-4.39 9.818-9.818 9.818z"/></svg>
+        Ordenar por WhatsApp
+      </a>
+      <a href="#menu" class="btn btn-outline">Ver el Menú →</a>
+    </div>
+
+  </div>
+
+  <!-- Indicador de scroll -->
+  <div class="scroll-indicator" id="scroll-indicator">
+    <span>Desliza</span>
+    <div class="scroll-mouse"></div>
+  </div>
+
+</header>
+
+<!-- ================================
+     STATS BAR
+================================ -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-num" data-target="9">0</span>
+      <span class="stat-label">Cortes para combinar a tu gusto</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="40" data-prefix="$">0</span>
+      <span class="stat-label">Tacos de cortes, desde</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="100" data-suffix="%">0</span>
+      <span class="stat-label">Tortillas hechas a mano</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-num" data-target="18">0</span>
+      <span class="stat-label">Personas en nuestro paquete más grande</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================================
+     MENÚ
+================================ -->
+<section class="section-menu" id="menu">
+  <div class="section-header">
+    <div class="section-tag">🌞 Lo Que Tenemos Para Ti</div>
+    <h2 class="section-title">Elige, Combina <em>y Disfruta</em></h2>
+    <p class="section-subtitle">Cortes a la parrilla, tortillas hechas a mano y guarniciones de siempre. Arma tu taco exactamente como se te antoja.</p>
+  </div>
+
+  <!-- Filtros de categoría -->
+  <div class="menu-filters reveal fade-up">
+    <button class="menu-filter active" data-cat="all">🍽️ Todo</button>
+    <button class="menu-filter" data-cat="cortes">🥩 Tacos de Cortes</button>
+    <button class="menu-filter" data-cat="kekas">🫓 Kekas</button>
+    <button class="menu-filter" data-cat="fundidos">🧀 Quesos &amp; Volcanes</button>
+    <button class="menu-filter" data-cat="bebidas">🥤 Bebidas</button>
+  </div>
+
+  <div class="menu-grid">
+
+    <!-- TACOS DE CORTES -->
+    <article class="menu-card menu-card--feature reveal fade-up" data-cat="cortes">
+      <img src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=800&q=80"
+           alt="Tacos de corte con cilantro, cebolla, rábano y limón sobre tortilla de maíz" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label menu-card-label--dorado">Especialidad de la casa</span>
+        <h3 class="menu-card-name">Tacos de Cortes</h3>
+        <p class="menu-card-desc">Nueve cortes a elegir, servidos en tortilla hecha a mano. Combínalos a tu gusto, las veces que quieras.</p>
+        <div class="menu-card-chips">
+          <span class="chip">Arrachera</span>
+          <span class="chip">Costilla</span>
+          <span class="chip">Bisteck</span>
+          <span class="chip">Ribeye</span>
+          <span class="chip">Hígado</span>
+          <span class="chip">Chistorra</span>
+          <span class="chip">Chorizo Argentino</span>
+          <span class="chip">Longaniza</span>
+          <span class="chip">Chorizo Verde</span>
+        </div>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$40 c/u</span>
+          <span class="menu-card-price-alt">Con queso $45 c/u</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- KEKAS -->
+    <article class="menu-card reveal fade-up" data-cat="kekas" style="transition-delay:.08s">
+      <img src="https://images.unsplash.com/photo-1618040996337-56904b7850b9?auto=format&fit=crop&w=800&q=80"
+           alt="Keka de tortilla de harina dorada, rellena de carne y queso, cortada en triángulos" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Para los que quieren más</span>
+        <h3 class="menu-card-name">Kekas</h3>
+        <p class="menu-card-desc">Tortilla de harina con tu carne favorita, o combinada. Una explosión de sabor en cada mordida.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$50 c/u</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- QUESOS FUNDIDOS & VOLCANES -->
+    <article class="menu-card reveal fade-up" data-cat="fundidos" style="transition-delay:.16s">
+      <img src="https://images.unsplash.com/photo-1582169296194-e4d644c48063?auto=format&fit=crop&w=800&q=80"
+           alt="Queso fundido gratinado con carne, pico de gallo y totopos" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Para compartir</span>
+        <h3 class="menu-card-name">Quesos Fundidos &amp; Volcanes</h3>
+        <p class="menu-card-desc">Queso fundido de tu carne de elección o combinado, ideal para 1-2 personas. También nuestros volcanes, crujientes y bañados en queso.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$200</span>
+          <span class="menu-card-price-alt">Volcanes $45</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- BEBIDAS -->
+    <article class="menu-card reveal fade-up" data-cat="bebidas" style="transition-delay:.24s">
+      <img src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?auto=format&fit=crop&w=800&q=80"
+           alt="Refresco frío con hielo y limón para acompañar tus tacos" class="menu-card-img" />
+      <div class="menu-card-body">
+        <span class="menu-card-label">Para acompañar</span>
+        <h3 class="menu-card-name">Bebidas</h3>
+        <p class="menu-card-desc">Coca-Cola, Coca-Cola sin azúcar, Sprite o Fanta, bien frías para bajar el antojo.</p>
+        <div class="menu-card-price-row">
+          <span class="menu-card-price">$25 c/u</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================================
+     PAQUETES PARA PARRILLADA
+================================ -->
+<section class="section-packages" id="paquetes">
+  <div class="section-packages-bg" data-parallax
+       style="background-image:url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=1920&q=80');"
+       role="img" aria-label="Costillas ahumadas recién cortadas, listas para una parrillada"></div>
+  <div class="section-packages-overlay"></div>
+  <div class="section-packages-particles" data-particles aria-hidden="true"></div>
+
+  <div class="section-header">
+    <div class="section-tag section-tag-dark">🔥 Para Compartir</div>
+    <h2 class="section-title section-title-dark">Paquetes Para <em>Tu Parrillada</em></h2>
+    <p class="section-subtitle section-subtitle-dark">Arma tu reunión con cortes de sobra, salsas, tortillas y todas las guarniciones. Tú eliges el tamaño.</p>
+  </div>
+
+  <div class="packages-grid">
+
+    <div class="package-card reveal scale-in">
+      <span class="package-num">01</span>
+      <h3 class="package-title">Paquete 1</h3>
+      <p class="package-people">2 a 3 personas</p>
+      <p class="package-includes">5 cortes completos a elegir + Chistorra</p>
+      <div class="package-price">$350</div>
+      <a href="https://wa.me/525519158509?text=%C2%A1Hola!%20Me%20interesa%20el%20Paquete%201%20(2%20a%203%20personas)%20de%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%94%A5"
+         target="_blank" rel="noopener" class="btn btn-primary btn-block">Pedir Este Paquete</a>
+    </div>
+
+    <div class="package-card package-card--highlight reveal scale-in" style="transition-delay:.1s">
+      <span class="package-badge">Más Pedido</span>
+      <span class="package-num">02</span>
+      <h3 class="package-title">Paquete 2</h3>
+      <p class="package-people">4 a 7 personas</p>
+      <p class="package-includes">9 cortes a elegir + Chorizo argentino y Chistorra</p>
+      <div class="package-price">$650</div>
+      <a href="https://wa.me/525519158509?text=%C2%A1Hola!%20Me%20interesa%20el%20Paquete%202%20(4%20a%207%20personas)%20de%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%94%A5"
+         target="_blank" rel="noopener" class="btn btn-primary btn-block">Pedir Este Paquete</a>
+    </div>
+
+    <div class="package-card reveal scale-in" style="transition-delay:.2s">
+      <span class="package-num">03</span>
+      <h3 class="package-title">Paquete 3</h3>
+      <p class="package-people">10 a 18 personas</p>
+      <p class="package-includes">18 cortes a elegir + Chorizo verde, Longaniza, Argentino y Chistorra</p>
+      <div class="package-price">$1,200</div>
+      <a href="https://wa.me/525519158509?text=%C2%A1Hola!%20Me%20interesa%20el%20Paquete%203%20(10%20a%2018%20personas)%20de%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%94%A5"
+         target="_blank" rel="noopener" class="btn btn-primary btn-block">Pedir Este Paquete</a>
+    </div>
+
+  </div>
+
+  <p class="packages-note reveal fade-up">🌮 Todos los paquetes incluyen salsas, limones, tortillas de maíz y harina, frijoles y cebollitas.</p>
+</section>
+
+<!-- ================================
+     POR QUÉ ELEGIRNOS
+================================ -->
+<section class="section-benefits" id="nosotros">
+  <div class="section-benefits-bg" data-parallax
+       style="background-image:url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80');"
+       role="img" aria-label="Ambiente interior elegante de restaurante, con luces cálidas y acabados oscuros"></div>
+  <div class="section-benefits-overlay"></div>
+  <div class="particles-layer" data-particles aria-hidden="true"></div>
+
+  <div class="section-header">
+    <div class="section-tag section-tag-dark">⭐ ¿Por Qué Los Soles?</div>
+    <h2 class="section-title section-title-dark">El Sabor Que <em>Nos Distingue</em></h2>
+  </div>
+
+  <div class="benefits-grid">
+
+    <div class="benefit-card reveal scale-in">
+      <span class="benefit-num">01</span>
+      <h3 class="benefit-title">Tortillas Hechas a Mano</h3>
+      <p class="benefit-desc">Amasadas y palmeadas al momento. Nada de bolsa, nada de atajos: el sabor de la tortilla recién hecha.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.08s">
+      <span class="benefit-num">02</span>
+      <h3 class="benefit-title">9 Cortes Para Combinar</h3>
+      <p class="benefit-desc">Arrachera, ribeye, costilla y más. Arma tu taco exactamente como se te antoja, sin límites.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.16s">
+      <span class="benefit-num">03</span>
+      <h3 class="benefit-title">Paquetes Para Cualquier Grupo</h3>
+      <p class="benefit-desc">Desde 2 hasta 18 personas, con todo listo para tu parrillada: salsas, tortillas y guarniciones incluidas.</p>
+    </div>
+
+    <div class="benefit-card reveal scale-in" style="transition-delay:.24s">
+      <span class="benefit-num">04</span>
+      <h3 class="benefit-title">Pide Directo Por WhatsApp</h3>
+      <p class="benefit-desc">Sin filas ni intermediarios. Escribes, confirmas tu pedido y listo.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================
+     CÓMO PEDIR
+================================ -->
+<section class="section-how" id="como-funciona">
+  <div class="section-how-bg" data-parallax
+       style="background-image:url('https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=1920&q=80');"
+       role="img" aria-label="Corte de ribeye a la parrilla servido con papas, sobre mesa de madera oscura"></div>
+  <div class="section-how-overlay"></div>
+
+  <div class="section-header">
+    <div class="section-tag section-tag-dark">📋 Así de Fácil</div>
+    <h2 class="section-title section-title-dark">Cómo Pedir <em>Tus Tacos</em></h2>
+  </div>
+
+  <div class="steps-grid">
+
+    <div class="step-item reveal fade-up">
+      <span class="step-num">01</span>
+      <h3 class="step-title">Elige Tus Cortes</h3>
+      <p class="step-text">Arrachera, ribeye, costilla, bisteck... combínalos como quieras, en taco o keka.</p>
+    </div>
+
+    <div class="step-connector" aria-hidden="true"></div>
+
+    <div class="step-item reveal fade-up" style="transition-delay:.1s">
+      <span class="step-num">02</span>
+      <h3 class="step-title">Pide Por WhatsApp</h3>
+      <p class="step-text">Escríbenos al 55 1915 8509 y confirma tu pedido en segundos.</p>
+    </div>
+
+    <div class="step-connector" aria-hidden="true"></div>
+
+    <div class="step-item reveal fade-up" style="transition-delay:.2s">
+      <span class="step-num">03</span>
+      <h3 class="step-title">Disfruta</h3>
+      <p class="step-text">Recibe tus tacos recién hechos, con tortillas de mano y todas las salsas.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================================
+     GALERÍA
+================================ -->
+<section class="section-gallery" id="galeria">
+  <div class="section-header">
+    <div class="section-tag">📸 Sabor Que Se Ve</div>
+    <h2 class="section-title">Así Se Vive <em>Los Soles</em></h2>
+    <p class="section-subtitle">Cortes al carbón, tortillas recién hechas y toda la sazón de nuestra parrilla.</p>
+  </div>
+
+  <div class="gallery-grid">
+
+    <figure class="gallery-item gallery-item--big reveal scale-in">
+      <img src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=1000&q=80"
+           alt="Tacos de carne deshebrada con cilantro y cebolla sobre tortilla de maíz" />
+      <figcaption>Cortes jugosos, siempre al punto</figcaption>
+    </figure>
+
+    <figure class="gallery-item reveal scale-in" style="transition-delay:.1s">
+      <img src="https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=800&q=80"
+           alt="Tacos de cortes servidos con limón y refresco, sobre mesa de talavera" />
+      <figcaption>El taco de tu día, con todo y refresco</figcaption>
+    </figure>
+
+    <figure class="gallery-item reveal scale-in" style="transition-delay:.2s">
+      <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=800&q=80"
+           alt="Orden de tacos recién servidos, listos para disfrutar" />
+      <figcaption>Para comer aquí o para llevar</figcaption>
+    </figure>
+
+  </div>
+</section>
+
+<!-- ================================
+     CONTACTO
+================================ -->
+<section class="section-contact" id="contacto">
+  <div class="section-contact-bg" data-parallax
+       style="background-image:url('https://images.unsplash.com/photo-1584208632869-05fa2b2a5934?auto=format&fit=crop&w=1920&q=80');"
+       role="img" aria-label="Cazuelas de barro con guarniciones mexicanas sobre mesa de talavera"></div>
+  <div class="section-contact-overlay"></div>
+  <div class="particles-layer" data-particles aria-hidden="true"></div>
+
+  <div class="section-header">
+    <div class="section-tag section-tag-dark">📱 Haz Tu Pedido</div>
+    <h2 class="section-title section-title-dark">Ordena <em>Tu Taco de Hoy</em></h2>
+    <p class="section-subtitle section-subtitle-dark">Cuéntanos qué se te antoja y lo confirmamos directo por WhatsApp.</p>
+  </div>
+
+  <div class="contact-inner">
+
+    <!-- Formulario -->
+    <div>
+      <form class="contact-form sticker-lg" id="contact-form">
+        <h3 class="form-title">Cuéntanos Tu Antojo 🌮</h3>
+
+        <div class="form-group">
+          <label class="form-label" for="nombre">Nombre</label>
+          <input class="form-input" type="text" id="nombre" name="nombre" placeholder="¿Cómo te llamas?" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="telefono">Teléfono (opcional)</label>
+          <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="Tu número de contacto" />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="pedido">¿Qué se te antoja?</label>
+          <textarea class="form-textarea" id="pedido" name="pedido" placeholder="Ej. 4 tacos de arrachera, 2 de ribeye y un queso fundido" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">
+          Enviar Pedido por WhatsApp 🚀
+        </button>
+      </form>
+    </div>
+
+    <!-- Info + CTA -->
+    <div class="contact-side">
+
+      <div class="contact-info">
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">📱</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">WhatsApp / Pedidos</div>
+            <a href="https://wa.me/525519158509" target="_blank" rel="noopener" class="contact-info-link">
+              55 1915 8509
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">🌞</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Steak &amp; Grill</div>
+            Cortes a la parrilla y tortillas hechas a mano, todos los días.
+          </div>
+        </div>
+
+        <div class="contact-info-item sticker">
+          <span class="contact-info-icon">🎉</span>
+          <div class="contact-info-text">
+            <div class="contact-info-label">Parrilladas y grupos</div>
+            ¿Reunión o parrillada? Escríbenos y armamos el paquete perfecto para tu grupo.
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Panel de marca -->
+      <div class="contact-cta-panel sticker-lg">
+        <img src="logo.png" alt="Taquería Los Soles" class="contact-cta-logo" />
+        <p class="contact-cta-text">¿Prefieres platicarlo directo?</p>
+        <a href="https://wa.me/525519158509?text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20de%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%8C%AE"
+           target="_blank" rel="noopener" class="btn btn-primary">
+          Escríbenos por WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================
+     FOOTER
+================================ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-brand-wrap">
+      <img src="logo.png" alt="Taquería Los Soles" class="footer-logo" />
+      <div>
+        <div class="footer-brand">Taquería Los Soles</div>
+        <p class="footer-tagline">El taco de tu día — Steak &amp; Grill.</p>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <ul class="footer-links">
+        <li><a href="#menu">Menú</a></li>
+        <li><a href="#paquetes">Paquetes</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#como-funciona">Cómo Pedir</a></li>
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <div class="footer-socials">
+        <a href="https://wa.me/525519158509" target="_blank" rel="noopener" class="footer-social-icon footer-social-wa" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.523 5.82L.057 23.862l6.197-1.427A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm.001 21.818a9.801 9.801 0 01-4.99-1.366l-.358-.213-3.677.846.873-3.576-.233-.368A9.818 9.818 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.818 4.39 9.818 9.82 0 5.43-4.39 9.818-9.818 9.818z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <p class="footer-copy">© 2026 Taquería Los Soles — Steak &amp; Grill. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- ================================
+     BOTÓN WHATSAPP FLOTANTE
+================================ -->
+<a
+  href="https://wa.me/525519158509?text=%C2%A1Hola!%20Quiero%20hacer%20mi%20pedido%20en%20Taquer%C3%ADa%20Los%20Soles%20%F0%9F%8C%AE"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="wa-float"
+  aria-label="Contactar por WhatsApp"
+>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+    <path d="M11.999 0C5.373 0 0 5.373 0 12c0 2.117.554 4.1 1.523 5.82L.057 23.862l6.197-1.427A11.934 11.934 0 0012 24c6.627 0 12-5.373 12-12S18.626 0 11.999 0zm.001 21.818a9.801 9.801 0 01-4.99-1.366l-.358-.213-3.677.846.873-3.576-.233-.368A9.818 9.818 0 012.18 12C2.18 6.57 6.57 2.18 12 2.18c5.43 0 9.818 4.39 9.818 9.82 0 5.43-4.39 9.818-9.818 9.818z"/>
+  </svg>
+  <span class="wa-float-text">Pedir Ahora</span>
+</a>
+
+<!-- Lógica & animaciones -->
+<script src="main.js"></script>
+
+</body>
+</html>
