@@ -15,7 +15,7 @@ Extraída directamente de los archivos en `imagenes/` (logo y flyer de menú):
 - **Nombre:** Taquería Los Soles
 - **Especialidad / línea:** Steak & Grill
 - **Slogan:** "El taco de tu día"
-- **Teléfono:** 55 1915 8509
+- **Teléfono:** 56 3364 9600
 
 ### Menú y precios
 
