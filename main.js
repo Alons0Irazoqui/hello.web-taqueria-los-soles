@@ -270,7 +270,7 @@
      FORMULARIO DE CONTACTO → ABRE WHATSAPP CON EL MENSAJE
   ----------------------------------------------------------------- */
   var contactForm = document.getElementById('contact-form');
-  var WHATSAPP_NUMBER = '525519158509';
+  var WHATSAPP_NUMBER = '525633649600';
 
   if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
